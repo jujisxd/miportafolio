@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!--MENÚ ENCABEZADO-->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">Juanjo</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+            <li>
+              <a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a>
+            </li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <!--SECCIÓN INICIO-->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="img/hero.png" alt="" />
+        </div>
+        <h1>JUANJO CARDENAS</h1>
+        <h2>
+          Tec. Desarrollo de Apps Multiplataforma - Estudiante Ing. Multimedia
+        </h2>
+        <div class="redes">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!--SECCIÓN SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>Sobre Mí</h2>
+        <p>
+          <span>Hola, soy Juanjo</span>, tengo 21 años y soy un apasionado por
+          la tecnología y en especial, la programación. Aunque esté estudiando
+          tengo las ganas y la dedicación necesaria para poder estar en
+          proyectos de programación que me ayuden a enriquecer mi experiencia y
+          conocimientos en el mundo de las nuevas tecnologías. Básicamente, me
+          gustan los retos...
+        </p>
+
+        <div class="fila">
+          <!--Datos personales-->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Nacimiento</strong>
+                17-01-2002
+              </li>
+              <li>
+                <strong>Teléfono</strong>
+                +34 640 52 33 47
+              </li>
+              <li>
+                <strong>Email</strong>
+                juanjocarpa2002.jjcp@gmail.com
+              </li>
+              <li>
+                <strong>Website</strong>
+                www.jujissite.com
+              </li>
+              <li>
+                <strong>Dirección</strong>
+                30002, Murcia, España
+              </li>
+              <li>
+                <strong>Cargo</strong>
+                <span>Estudiante - Freelance</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Intereses -->
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>JUEGOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MUSICA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-plane"></i>
+                <span>VIAJAR</span>
+              </div>
+              <div class="interes">
+                <i class="fa-brands fa-windows"></i>
+                <span>WINDOWS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-dumbbell"></i>
+                <span>DEPORTE</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-book"></i>
+                <span>LEER</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-laptop"></i>
+                <span>PROGRAMAR</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button>
+          Descargar CV <i class="fa-solid fa-download"></i>
+          <span class="overlay"></span>
+        </button>
+      </div>
+    </section>
+
+    <!--SECCIÓN SKILLS-->
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+          <!--Technical skill-->
+          <div class="col">
+            <h3>Technical Skills</h3>
+            <div class="skill">
+              <span>Java</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>HTML & CSS</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Python</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>SQL</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Photosho</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Filmora</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Professional skills-->
+          <div class="col">
+            <h3>Professional Skills</h3>
+            <div class="skill">
+              <span>Comunicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Dedicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>100%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en equipo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>85%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Superación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>100%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>85%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Responsabilidad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>100%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--SECCION CURRICULUM-->
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h3>Curriculum</h3>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación</h3>
+
+            <div class="item izq">
+              <h4>Desarrollo de Apps Multiplataforma</h4>
+              <span class="casa">MEDAC Murcia</span>
+              <span class="fecha">2020 - 2022</span>
+              <p>
+                Formación profesional en la que aprendí de manera práctica el
+                como crear aplicaciones usando mayormente Java; y además de
+                esto, asignaturas en las que aprendí fundamentos sobre diseño de
+                páginas web usando HTML y CSS, desarrollo en aplicaciones
+                móviles usando Android Studio con Java y la creación de una
+                empresa. Esta FP me sirvió para entrar directo a la Universidad.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+
+            <div class="item izq">
+              <h4>Ing. Multimedia</h4>
+              <span class="casa">Universidad de Alicante</span>
+              <span class="fecha">2022 - actualidad</span>
+              <p>
+                Es la carrera que actualmente me encuentro estudiando. He pasado
+                recién el primer año y me encuentro muy a gusto con los
+                conocimientos que me he ido encontrando. Espero que la carrera
+                se complemente con el nivel práctico que llevo de la FP.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col derecha">
+            <h3>Experiencia de trabajo</h3>
+            <div class="item der">
+              <h4>Programador Becario</h4>
+              <span class="casa">CTO Madrid</span>
+              <span class="fecha">2022</span>
+              <p>
+                Las prácticas duraron cuatro meses en CTO Madrid, una academia
+                de oposiciones con 35 años de experiencia en el sector. Ahí
+                aprendí nuevas tecnologías como C#, Angular, Vue y LINQ, y me vi
+                envuelto en un mundo más laboral y real en el desarrollo de
+                software.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--SECCION PORTAFOLIO-->
+    <section id="portafolio" class="portafolio">
+      <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img src="img/p1.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="img/p2.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="img/p3.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="img/p4.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="img/p5.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="img/p6.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--SECCION CONTACTO-->
+    <section class="contacto" id="contacto">
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!--Formulario-->
+          <div class="col">
+            <input type="text" placeholder="Tú Nombre" />
+            <input type="text" placeholder="Número telefónico" />
+            <input type="text" placeholder="Email" />
+            <input type="text" placeholder="Tema" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="Mensaje"
+              placeholder="Mensaje"
+            ></textarea>
+            <button>
+              Enviar mensaje <i class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+          </div>
+
+          <!--Mapa-->
+          <div class="col">
+            <img src="img/ubicacion.png" alt="" />
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Murcia 30002, El Carmen, Murcia centro
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  Llámame: +34 640 52 33 47
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Email: juanjocarpa2002.jjcp@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>

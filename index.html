@@ -292,9 +292,10 @@
               <span class="casa">Universidad de Alicante</span>
               <span class="fecha">2022 - actualidad</span>
               <p>
-                Es la carrera que actualmente me encuentro estudiando. Llevo ya unos
-                estudiando la carrera y cada vez aprendiendo más y más. Espero que la carrera
-                se complemente con el nivel práctico que llevo de la FP.
+                Es la carrera que actualmente me encuentro estudiando. Llevo ya
+                unos estudiando la carrera y cada vez aprendiendo más y más.
+                Espero que la carrera se complemente con el nivel práctico que
+                llevo de la FP.
               </p>
               <div class="conectori">
                 <div class="circuloi"></div>
@@ -387,18 +388,17 @@
         <div class="fila">
           <!--Formulario-->
           <div class="col">
-            <input type="text" placeholder="Tú Nombre" />
-            <input type="text" placeholder="Número telefónico" />
-            <input type="text" placeholder="Email" />
-            <input type="text" placeholder="Tema" />
+            <input type="text" id="nombre" placeholder="Tú Nombre" />
+            <input type="text" id="telefono" placeholder="Número telefónico" />
+            <input type="text" id="email" placeholder="Email" />
+            <input type="text" id="tema" placeholder="Tema" />
             <textarea
-              name=""
-              id=""
+              id="mensaje"
               cols="30"
-              rows="Mensaje"
+              rows="10"
               placeholder="Mensaje"
             ></textarea>
-            <button>
+            <button onclick="enviarWhatsApp()">
               Enviar mensaje <i class="fa-solid fa-paper-plane"></i>
               <span class="overlay"></span>
             </button>
@@ -427,7 +427,7 @@
         </div>
       </div>
     </section>
-
+    
     <!--FOOTER-->
     <footer>
       <a href="#inicio" class="arriba">

@@ -37,6 +37,48 @@ function efectoHabilidades(){
     }
 }
 
+function enviarWhatsapp(){
+    //obtengo los valores de los campos del formulario
+    var nombre = document.getElementById("nombre").value;
+    var email = document.getElementById("email").value;
+    var mensaje = document.getElementById("mensaje").value;
+    var telefono = document.getElementById("telefono").value;
+    var tema = document.getElementById("tema").value;
+
+    //valido los campos obligatorios
+    if(nombre === "" || email === "" || mensaje === ""){
+        alert("Por favor, complete los campos obligatorios: Nombre, Email y Mensaje.");
+        return;
+    }
+
+    const numeroWhatsapp = "34640523347"; // Reemplaza con tu número de WhatsApp
+
+    let mensajeWhatsapp = `Hola, mi nombre es ${nombre}.\n`;
+
+    if(telefono !== ""){
+        mensajeWhatsapp += `Mi número de teléfono es: ${telefono}.\n`;
+    }
+
+    mensajeWhatsapp += `Mi email es: ${email}.\n`;
+
+    if(tema !== ""){
+        mensajeWhatsapp += `El tema es: ${tema}.\n`;
+    }
+
+    mensajeWhatsapp += `Mensaje: ${mensaje}`;
+
+    //creo el mensaje por whatsapp
+    const url = `https://wa.me/${numeroWhatsapp}?text=${encodeURIComponent(mensajeWhatsapp)}`;
+
+    window.open(url, '_blank').focus();
+
+    // Opcional: Limpiar el formulario después de enviar
+    document.getElementById('nombre').value = '';
+    document.getElementById('telefono').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('tema').value = '';
+    document.getElementById('mensaje').value = '';
+}
 //detecto el scrolling para aplicar la anumacion de la barra de habs
 window.onscroll = function(){
     efectoHabilidades();

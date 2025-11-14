@@ -87,7 +87,12 @@ html{
   margin-top: 40px;
   border: 10px solid #1CB698;
   display: block;
-  width: 80%;
+  width: 80%; /* Mantiene el ancho relativo al contenedor */
+  /* --- CAMBIOS AQUÍ --- */
+  height: auto; /* Se ajustará automáticamente por aspect-ratio */
+  aspect-ratio: 1 / 1; /* Esto hace que el alto sea igual al ancho */
+  object-fit: cover; /* Recorta la imagen para que cubra todo el cuadrado sin distorsionarla */
+  /* --- FIN CAMBIOS --- */
   margin:auto;
   border-radius: 100%;
 }
